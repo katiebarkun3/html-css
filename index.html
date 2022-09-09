@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+
+        h1{ /*1*/
+         color: red;
+         background-color: aquamarine;
+        }
+
+        /*по имени ID*/
+        #header1 { /*1000*/
+            color: aquamarine;
+         background-color:red;
+        }
+
+         /*по имени класса*/
+         .header2 { /*100*/
+            color:blueviolet;
+        }
+
+        /*группировки селекторов*/
+        /*искать на любом уровне вложенности*/
+        h2 span {
+            color:red;
+        }
+        /*искать на следующем уровне вложенности*/
+        h2>b>span {
+            color: blue;
+        }
+        /*перечисление селекторов*/
+        h3, h4, h5 {
+            color: yellowgreen;
+        }
+        /*элемент расположен прямо под другим элементом*/
+        h1+p {
+            color: red;
+        }
+        /*по наведению мышки изменяется цвет элемента*/
+        p:hover {
+            color: gold;
+        }
+        /*по наведению мышки изменяется цвет последнего (если first первого) такого элемента*/
+        p:last-child {
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header1" class="header1">Заголовок 1</h1>
+    <h1 class="header2">Заголовок 2</h1>
+    <h1>Заголовок 3</h1>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugit minus, vero sequi consequatur quod excepturi modi maxime asperiores esse? Hic voluptates possimus ab iure, amet quas corporis laudantium quasi.</span>
+    <h2>Lorem, ipsum <b><span>dolor sit amet consectetur</span></b> adipisicing elit. Reiciendis quibusdam numquam quam ducimus, magnam exercitationem pariatur eius quasi ad minus praesentium molestias dolorem adipisci nostrum sed voluptatum nisi quisquam architecto.</h2>
+    <h3>Test</h3>
+    <h4>Test</h4>
+    <h5>Test</h5>
+
+    <h1>Test</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque perferendis animi distinctio quaerat dolor porro, sint reiciendis suscipit veritatis. Tenetur rerum vero totam aut deserunt omnis ex! Debitis, odio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quasi sed laborum sequi reiciendis minus doloribus consequatur, repellendus incidunt possimus, eius nulla quisquam fuga dolorem molestiae hic veritatis ex! Minus!</p>
+</body>
+</html>
